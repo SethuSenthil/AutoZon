@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "AutoZon Balance Reloader",
+  "version": "0.1.0",
+  "description": "Automatically reloads your Amazon gift card balance to maximize your rewards!",
+  "permissions": ["tabs", "debugger", "storage", "notifications"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Amazon Balance Reloader"
+  }
+}

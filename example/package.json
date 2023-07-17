@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "node ./build.js",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "puppeteer-core": "^19.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4",
+    "esbuild": "^0.15.11",
+    "esbuild-copy-static-files": "^0.1.0"
+  }
+}

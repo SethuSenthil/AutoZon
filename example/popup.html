@@ -1,0 +1,118 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <style>
+        body {
+            width: 300px;
+            height: 300px;
+        }
+
+        #delay-settings {
+            display: none;
+        }
+
+        .loaded-payment-method {
+            cursor: pointer;
+        }
+    </style>
+    <main>
+        <center>
+            <h2>AutoZon</h2>
+            <h5>Automatic Amazon Balance Reloader</h5>
+            <p>Maximize your rewards and credit score!</p>
+        </center>
+        <ul class="collection">
+            <li class="collection-item"> <a class="modal-trigger" id="trigger-modal"><i class="fa-solid fa-plus "></i>
+                    Add a
+                    new Card </a></li>
+        </ul>
+
+        <ul class="collection">
+            <li class="collection-item"> <a href="" class="green-text"><i class="fa-solid fa-hand-holding-dollar"></i> Donate</a></li>
+            <li class="collection-item"> <a href="" class="black-text"><i class="fa-brands fa-github"></i> Source Code</a></li>
+            <li class="collection-item"> <a href="" class="purple-text"><i class="fa-brands fa-discord"></i> Join the Discord</a></li>
+        </ul>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Add New Card</h4>
+                <p>Your payment details are NOT sent to AutoZon</p>
+
+                <br />
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">credit_card</i>
+                    <input placeholder="1234" id="card_number" type="number" max="9999" min="0001" data-length="4"
+                        class="validate">
+                    <label for="card_number">Last 4 Digits of Card Number</label>
+                </div>
+
+                <p>Friendly card name is for your convince only, can be anything</p>
+
+                <br />
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">label</i>
+                    <input placeholder="Discover Card" id="card_name" type="text" class="validate">
+                    <label for="card_name">Friendly Card Name</label>
+                </div>
+
+                <p>Amount to reload (lowest Amazon allows 0.50)</p>
+
+                <br />
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">paid</i>
+                    <input value="0.50" id="amount_charged" type="number" min="0.50">
+                    <label for="amount_charged">Charge Amount</label>
+                </div>
+
+
+                <p>Amount of Times to repeat this transaction</p>
+
+                <br />
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">repeat_on</i>
+                    <input value="1" id="repeat" type="number" min="1" class="validate">
+                    <label for="repeat">Repeat Times</label>
+                </div>
+
+                <div id="delay-settings">
+
+                    <p>Delay in between transactions</p>
+
+                    <br />
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">schedule</i>
+                        <input value="15" id="delay" type="number" min="1" class="validate">
+                        <label for="delay">Delay in between transaction (in seconds)</label>
+                    </div>
+
+                </div>
+
+                <p>This AutoZon will reload your <i class="fa-brands fa-amazon"></i> balance by $<span
+                        id="total-cost">0.50</span></p>
+
+            </div>
+            <div class="modal-footer">
+                <a id="save-new-card" class="waves-effect waves-green btn-flat">Add</a>
+            </div>
+        </div>
+    </main>
+    <script src="materialize.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
