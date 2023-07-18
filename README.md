@@ -23,6 +23,18 @@ Some banks require a minimum number of purchases to get the best interest rates 
 Many people buy small Amazon gift card reloads to meet these requirements easily. Since a lot of people use Amazon anyway, the reloaded balance eventually gets spent.
 
 This browser extension aims to automate this process of making small reloading purchases to make it even easier!
+
+## How to Use?
+- Install the extension
+- Make sure you are logged into amazon.com
+- Make sure you have all the payment methods you want to use in AutoZon already added into Amazon
+- Add the credit or debit card into AutuZon (only the last 4 digits is required)
+- Run the AutuZon by clicking on the payment method in the AutuZon extension
+
+### Options
+- Customize the name of the card (for your viewing in the extension)
+- Customize how many times to purchase (some cards require x amount of purchases, so this will come in handy then)
+  - Advanced: Customize the delay in between the multiple purchases (stick with the default unless you know what ur doing)
 ## (Developer) Steps to build and debug the extension
 
 ```
