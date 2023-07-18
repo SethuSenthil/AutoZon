@@ -4,43 +4,50 @@
 
 <body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="print">
 
 
     <style>
         body {
             width: 300px;
             height: 300px;
+            font-family: 'Amazon Ember', sans-serif;
         }
 
         #delay-settings {
             display: none;
         }
 
-        .loaded-payment-method {
+        .loaded-payment-method, .cursor-pointer {
             cursor: pointer;
+        }
+        h2{
+            font-family: 'Amazon Ember Display', sans-serif;
+        }
+        .brand-text-color{
+            color: #FF9900;
         }
     </style>
     <main>
         <center>
-            <h2>AutoZon</h2>
-            <h5>Automatic Amazon Balance Reloader</h5>
+            <h2>Auto<span class="brand-text-color">Zon</span></h2>
+            <h5>Automatic <i class="fa-brands fa-amazon brand-text-color"></i> Balance Reloader</h5>
             <p>Maximize your rewards and credit score!</p>
         </center>
         <ul class="collection">
-            <li class="collection-item"> <a class="modal-trigger" id="trigger-modal"><i class="fa-solid fa-plus "></i>
+            <li class="collection-item cursor-pointer"> <a class="modal-trigger" id="trigger-modal"><i class="fa-solid fa-plus "></i>
                     Add a
                     new Card </a></li>
         </ul>
 
         <ul class="collection">
-            <li class="collection-item"> <a href="" class="green-text"><i class="fa-solid fa-hand-holding-dollar"></i> Donate</a></li>
-            <li class="collection-item"> <a href="" class="black-text"><i class="fa-brands fa-github"></i> Source Code</a></li>
-            <li class="collection-item"> <a href="" class="purple-text"><i class="fa-brands fa-discord"></i> Join the Discord</a></li>
+            <li class="collection-item"> <a href="https://donate.sethusenthil.com/" class="green-text" target="_blank"><i class="fa-solid fa-hand-holding-dollar"></i> Donate</a></li>
+            <li class="collection-item"> <a href="https://discord.gg/savetok-vibin-tm-718151446222340166" target="_blank" class="purple-text"><i class="fa-brands fa-discord" target="_blank"></i> Join the Discord</a></li>
+            <li class="collection-item"> <a href="https://github.com/SethuSenthil/AutoZon" class="black-text" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a> <span>By <a href="https://sethusenthil.com/?ref=AutoZon_Ext" target="_blank">Sethu Senthil</a></span></li>
         </ul>
 
         <div id="modal1" class="modal">

@@ -11,5 +11,8 @@
   "action": {
     "default_popup": "popup.html",
     "default_title": "Amazon Balance Reloader"
+  },
+  "icons": {
+    "133": "icon.png"
   }
 }

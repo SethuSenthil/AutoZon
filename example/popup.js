@@ -14,9 +14,14 @@ function addCollectionItem({ cardName, cardEnding, amountCharged = 0.5, repeatTi
     const icon = document.createElement('i');
     icon.className = 'fa-solid fa-credit-card';
 
+     // Create the span element for the card ending
+     const timesToRunSpan = document.createElement('span');
+     timesToRunSpan.className = 'grey-text';
+     timesToRunSpan.textContent = `(x${repeatTimes})`;
+
     // Create the span element for the card ending
     const span = document.createElement('span');
-    span.className = 'grey-text';
+    span.className = 'grey-text text-darken-2';
     span.textContent = 'ending in ' + cardEnding;
 
     // Append the icon and card name to the li element
@@ -58,6 +63,7 @@ function addCollectionItem({ cardName, cardEnding, amountCharged = 0.5, repeatTi
 
 
     li.appendChild(spanIconAndName);
+    li.appendChild(timesToRunSpan);
     li.appendChild(span);
     li.appendChild(deleteIcon);
 

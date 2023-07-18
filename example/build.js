@@ -38,5 +38,9 @@ esbuild.build({
       src: './materialize.min.js',
       dest: '../dist/example/materialize.min.js',
     }),
+    copyStaticFiles({
+      src: './icon.png',
+      dest: '../dist/example/icon.png',
+    }),
   ],
 });
