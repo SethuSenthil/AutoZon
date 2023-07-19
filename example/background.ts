@@ -62,7 +62,7 @@ async function run({
           await delay(DELAY_MS);
         } else {
           chrome.tabs.create({
-            url: 'https://sethusenthil.com',
+            url: 'https://autozon.sethusenthil.com/done',
             active: true,
           });
         }
