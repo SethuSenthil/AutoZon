@@ -5,7 +5,7 @@ import {ExtensionDebuggerTransport} from '../src';
 
 chrome.runtime.onInstalled.addListener(object => {
   //TODO: change to extension homepage and create the page
-  const externalUrl = 'https://autozon.sethusenthil.com/welcome.html';
+  const externalUrl = 'https://autozon.sethusenthil.com/welcome';
 
   if (object.reason === chrome.runtime.OnInstalledReason.INSTALL) {
     chrome.tabs.create({url: externalUrl}, tab => {
@@ -151,7 +151,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     chrome.tabs.create(
       {
         active: true,
-        url: 'https://autozon.sethusenthil.com/start.html',
+        url: 'https://autozon.sethusenthil.com/start',
       },
       tab =>
         tab.id

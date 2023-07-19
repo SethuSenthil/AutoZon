@@ -1,6 +1,8 @@
 # AutoZon - Browser Extension to automate Amazon Reload Purchases
 ## Increase Credit Score & Maximize Rewards
 
+https://autozon.sethusenthil.com/
+
 <center> <img src="./example/icon.png" alt="AutoZon Logo"/> </center>
 
 * WARNING: THIS EXTENSION WILL MAKE PURCHASES ON YOUR BEHALF
