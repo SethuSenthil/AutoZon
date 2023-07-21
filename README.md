@@ -27,7 +27,7 @@ Many people buy small Amazon gift card reloads to meet these requirements easily
 This browser extension aims to automate this process of making small reloading purchases to make it even easier!
 
 ## How to Use?
-- Install the extension
+- Install the extension (https://chrome.google.com/webstore/detail/autozon-balance-reloader/kldioabbkdmbdbinjjmjffbnbmghdnhg) 
 - Make sure you are logged into amazon.com
 - Make sure you have all the payment methods you want to use in AutoZon already added into Amazon
 - Add the credit or debit card into AutuZon (only the last 4 digits is required)
